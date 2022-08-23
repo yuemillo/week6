@@ -1,0 +1,77 @@
+.navbar{
+      
+    z-index: 999;
+    .container{
+        @include lg(){
+            display: none;
+        }
+    }
+    .logoSm{
+        width: 24px;
+        height: 24px;
+        object-fit: cover;
+        object-position: left;
+    }
+    .logoLg{
+        display: none;
+        @include lg(){
+            display: block;
+            width: 174px; 
+        }
+    }
+    .logoSm{
+        @include lg(){
+            display: none;
+        }
+    }
+
+
+    .nav-item{
+   
+        .icon{
+            padding-left: 2px;
+            padding-right: 2px;
+        }
+        .navLink{
+                color: #fff;
+                padding-top: 12px;
+                padding-bottom: 12px;
+                width: 100%;
+                display: block;
+                text-decoration: none;
+                    &:hover{
+                        color: black;
+                        background-color: #fff;
+                    }
+                @include lg(){
+                    &:hover{
+                        color: $primary;
+                        background-color: transparent;
+                    }
+                }
+
+        }
+    }
+    &::before{
+        content: '';
+        position: fixed;
+        top: 72px; 
+        left: 0;       
+        border-bottom: 2px solid $primary;
+        width: 50%;
+        @include lg(){
+            top: 85.953px; 
+        }
+    }
+    &::after{
+        content: '';
+        position: fixed;
+        top: 72px; 
+        right: 0;      
+        border-bottom: 2px solid $secondary;
+        width: 50%;
+        @include lg(){
+            top: 85.953px; 
+        }
+    }
+}

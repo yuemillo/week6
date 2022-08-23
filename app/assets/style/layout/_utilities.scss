@@ -1,0 +1,17 @@
+.textGradient{
+    background-image: linear-gradient(0deg, $primary, $secondary);
+    background-clip: text;
+    color: transparent;
+}
+.titleLine{
+    position: relative;
+    &::after{
+    content: '';
+    position: absolute;
+    bottom: -16px;
+    left: 50%;
+    transform: translatex(-50%);
+    border-bottom: 3px solid $primary;
+    width: 50px;
+    }
+}
