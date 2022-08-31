@@ -63,6 +63,7 @@ $colors: (
   "white":      $white,
   "gray":       $gray-600,
   "gray-dark":  $gray-800,
+  "black":      $black,
  
 ) !default;
 // scss-docs-end colors-map
@@ -78,6 +79,8 @@ $light:         $gray-100 !default;
 $dark:          $gray-800 !default;
 $lightBg:       $gray-700 ;
 $darkBg:        $gray-900 ;
+$blackBg:       $black;
+
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
@@ -91,7 +94,8 @@ $theme-colors: (
   "light":      $light,
   "dark":       $dark,
   "lightBg":    $lightBg,
-  "darkBg":     $darkBg
+  "darkBg":     $darkBg,
+  "blackBg":    $blackBg
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -1108,7 +1112,7 @@ $card-cap-bg:                       rgba($black, .03) !default;
 $card-cap-color:                    null !default;
 $card-height:                       null !default;
 $card-color:                        null !default;
-$card-bg:                           $white !default;
+$card-bg:                           $lightBg;//$white !default;
 $card-img-overlay-padding:          $spacer !default;
 $card-group-margin:                 $grid-gutter-width * .5 !default;
 // scss-docs-end card-variables
